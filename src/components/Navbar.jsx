@@ -27,13 +27,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Maxime Mettey&nbsp;
-            <span className='sm:block hidden'>| Full Stack Developer</span>
+          <img src={logo} alt="logo" className="w-15 h-9 object-contain" />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex flex-col justify-start'>
+            Maxime Mettey<br />
+            <span className='sm:block hidden text-[14px] font-normal'>Full Stack Developer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -55,7 +55,7 @@ const Navbar = () => {
         </ul>
 
         <div
-          className='sm:hidden flex flex-1 justify-end
+          className='md:hidden flex flex-1 justify-end
           items-center'
         >
           <img

@@ -43,11 +43,12 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I am a skilled developper with 11+ years of experience in
-        web and software development. I have expertise in multiple
-        programming stacks, and experience with some popular CMS.
+        web, mobile and software development. I have expertise in various
+        programming stacks and content mangement systems.
         I had the opportunity to lead multiple developers team, with
-        Agile-inspired management.
-        I love to collaborate and solve difficult problems with code.
+        Agile-inspired management methods.
+        Being design-conscious, I love to implement nice-looking projects, as much
+        as I love to solve difficult problems with code.
         Let's work together !
       </motion.p>
 

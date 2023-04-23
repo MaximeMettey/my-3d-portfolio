@@ -20,11 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import drupal from "./tech/drupal.png";
+import wordpress from "./tech/wordpress.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import onzeheureonze from "./company/onzeheureonze.png";
+import co2m from "./company/co2m.png";
+import hlp from "./company/hlp.png";
+import webrelief from "./company/webrelief.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -52,10 +54,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  drupal,
+  wordpress,
+  onzeheureonze,
+  co2m,
+  hlp,
+  webrelief,
   carrent,
   jobit,
   tripguide,

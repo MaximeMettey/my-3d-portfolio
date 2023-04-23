@@ -15,10 +15,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  drupal,
+  wordpress,
+  onzeheureonze,
+  co2m,
+  hlp,
+  webrelief,
   carrent,
   jobit,
   tripguide,
@@ -35,6 +37,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,19 +52,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
+    title: "Full Stack development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "DevOps",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI / UX Design",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Creative coding",
     icon: creator,
   },
 ]
@@ -103,7 +113,7 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
+  },/*
   {
     name: "figma",
     icon: figma,
@@ -111,60 +121,79 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },*/
+  {
+    name: "drupal",
+    icon: drupal,
+  },
+  {
+    name: "wordpress",
+    icon: wordpress,
   },
 ]
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Managing Director",
+    company_name: "11h11 Design & Communication",
+    icon: onzeheureonze,
+    iconBg: "#000000",
+    date: "2022 - Today",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Website and mobile app development and deployment",
+      "UI/UX Design",
+      "Cyber security",
+      "Web server administration",
+      "SEO / SEA",
+      "Project and team management",
+      "Price quotations, specifications drafting, planning",
+      "Business strategy",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Freelance",
+    company_name: "Maxime Mettey / CO2M WebDesign & Communication",
+    icon: co2m,
+    iconBg: "#000000",
+    date: "2015 - Today",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Web & mobile full stack development, maintenance, and deployment",
+      "Print and digital design",
+      "UI/UX design",
+      "Web server administration",
+      "Computer repair and assistance",
+      "Custom development",
+      "Creative coding"
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Project Manager & Full stack Developer",
+    company_name: "HLP Services",
+    icon: hlp,
+    iconBg: "#ffffff",
+    date: "2014 - 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintenance, development and deployment of an innotive Saas cloud platform",
+      "Research & Development on a complex mobile app",
+      "Cyber Security",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products",
+      "Full stack development : ExtJS, PHP, HTML, CSS, Javascript, Angular / TypeScript, VBA.net, NodeJS",
+      "Price quotations, specifications drafting, help desk",
+      "Project and team management",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Full Stack Developer",
+    company_name: "WebRelief",
+    icon: webrelief,
+    iconBg: "#ffffff",
+    date: "2012 - 2014",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Full stack development : PHP, HTML, CSS, JavaScript",
+      "CMS / Frameworks : Prestashop, Drupal, Wordpress, Symfony",
+      "REST APIs & Webservices development",
+      "Collaborating with the desginers team",
+      "Implementing responsive design and ensuring cross-browser compatibility",
     ],
   },
 ]
@@ -172,27 +201,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Maxime has always listened to our needs and brought good solutions to every problem in no time.",
+    name: "Etienne",
+    designation: "",
+    company: "",
+    // image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Maxime is serious about his job. I recommend.",
+    name: "Laurent Fluri",
+    designation: "CEO",
+    company: "Taxi Fluri",
+    // image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "---",
+    name: "Laurent Donge",
+    designation: "CEO",
+    company: "11h11 Design & Communication",
+    // image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ]
 
