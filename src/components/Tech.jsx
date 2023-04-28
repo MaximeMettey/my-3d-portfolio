@@ -8,9 +8,9 @@ import { technologies } from "../constants"
 
 const SkillCard = ({ index, name, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[150px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring", 0.2 * index, 0.75)}
+        variants={fadeIn("right", "spring", 0.1 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
@@ -19,10 +19,10 @@ const SkillCard = ({ index, name, icon }) => {
             scale: 1,
             speed: 450
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-5 min-h-[150px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={name} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{name}</h3>
+          <h3 className="text-white text-[12px] font-bold text-center">{name}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -38,7 +38,7 @@ const Tech = () => {
         <p className={styles.sectionSubText}>What I know</p>
         <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
-      <div className="flex flex-row flex-wrap justify-center gap-10 mt-3">
+      <div className="flex flex-row flex-wrap justify-center gap-7 mt-3">
         {technologies.map((technology, index) => (
           <SkillCard
             key={technology.name}

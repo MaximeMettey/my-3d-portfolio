@@ -17,6 +17,16 @@ import {
   docker,
   drupal,
   wordpress,
+  prestashop,
+  joomla,
+  typo3,
+  php,
+  illustrator,
+  xd,
+  symfony,
+  aspnet,
+  vba,
+  python,
   onzeheureonze,
   co2m,
   hlp,
@@ -79,6 +89,14 @@ const services = [
 
 const technologies = [
   {
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name: "Symfony",
+    icon: symfony,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -119,24 +137,56 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
-  },/*
-  {
-    name: "figma",
-    icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
-  },*/
+  },
   {
-    name: "drupal",
+    name: "VBA",
+    icon: vba,
+  },
+  {
+    name: "ASP.net",
+    icon: aspnet,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Drupal",
     icon: drupal,
   },
   {
-    name: "wordpress",
+    name: "WordPress",
     icon: wordpress,
+  },
+  {
+    name: "PrestaShop",
+    icon: prestashop,
+  },
+  {
+    name: "Joomla",
+    icon: joomla,
+  },
+  {
+    name: "Typo3",
+    icon: typo3,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "Adobe XD",
+    icon: xd,
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: illustrator,
   },
 ]
 
