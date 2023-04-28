@@ -3,11 +3,69 @@ import { motion } from "framer-motion"
 
 import { styles } from "../styles"
 import { github } from "../assets"
+import { linkIcon } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const GitHubButton = ({ source_code_link }) => {
+
+  return (
+    <div
+      onClick={() => window.open(source_code_link, "_blank")}
+      className="black-gradient mr-2 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+      title="Check the project's source code !"
+    >
+      <img
+        src={github}
+        alt="github"
+        className="w-1/2 h-1/2 object-contain"
+      />
+    </div>
+  )
+
+}
+
+const LinkProjectButton = ({ link_project }) => {
+
+  return (
+    <div
+      onClick={() => window.open(project_link, "_blank")}
+      className="white-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+      title="See this project online !"
+    >
+      <img
+        src={linkIcon}
+        alt="Link icon"
+        className="w-1/2 h-1/2 object-contain"
+      />
+    </div>
+  )
+
+}
+
+const ProjectButtons = ({ source_code_link, project_link }) => {
+
+  let returnVar = [];
+
+  if (
+    typeof (source_code_link) !== 'undefined'
+    && source_code_link !== ''
+  ) {
+    returnVar.push(<GitHubButton source_code_link={source_code_link} />)
+  }
+
+  if (
+    typeof (project_link) !== 'undefined'
+    && project_link !== ''
+  ) {
+    returnVar.push(<LinkProjectButton project_link={project_link} />)
+  }
+
+  return returnVar;
+}
+
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, project_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -22,16 +80,10 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
+            <ProjectButtons
+              source_code_link={source_code_link}
+              project_link={project_link}
+            />
           </div>
         </div>
 

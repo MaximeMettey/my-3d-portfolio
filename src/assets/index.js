@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkIcon from "./link.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -28,9 +29,17 @@ import co2m from "./company/co2m.png";
 import hlp from "./company/hlp.png";
 import webrelief from "./company/webrelief.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import mmdev from "./projects/mockup-mmdev.jpg";
+import arlux from "./projects/arlux-site-internet-wordpress.jpg";
+import thanatopraxie from "./projects/thanatopraxie.jpg";
+import didsign from "./projects/didsign.jpg";
+import jemefaislabelle from "./projects/jemefaislabelle.jpg";
+import grrranit from "./projects/grrranit.jpg";
+import negopret from "./projects/negopret.webp";
+import marionnettes from "./projects/theatre-de-marionnettes-de-belfort.jpg";
+import pavillonsBelvil from "./projects/pavillons-belvil.jpg";
+import laboutiquedeslunetiers from "./projects/laboutiquedeslunetiers.jpg";
+import veneracreation from "./projects/veneracreation.jpg";
 
 export {
   logo,
@@ -39,6 +48,7 @@ export {
   mobile,
   web,
   github,
+  linkIcon,
   menu,
   close,
   css,
@@ -60,7 +70,15 @@ export {
   co2m,
   hlp,
   webrelief,
-  carrent,
-  jobit,
-  tripguide,
+  mmdev,
+  arlux,
+  thanatopraxie,
+  didsign,
+  jemefaislabelle,
+  grrranit,
+  negopret,
+  marionnettes,
+  pavillonsBelvil,
+  laboutiquedeslunetiers,
+  veneracreation,
 };

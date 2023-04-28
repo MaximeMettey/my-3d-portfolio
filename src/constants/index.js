@@ -21,10 +21,18 @@ import {
   co2m,
   hlp,
   webrelief,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  mmdev,
+  arlux,
+  thanatopraxie,
+  didsign,
+  jemefaislabelle,
+  grrranit,
+  negopret,
+  marionnettes,
+  pavillonsBelvil,
+  laboutiquedeslunetiers,
+  veneracreation,
 } from "../assets"
 
 export const navLinks = [
@@ -227,67 +235,171 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My own website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "First concrete project using React, Tailwind and ThreeJS. I wanted to challenge myself with new technologies. Made in two days.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "threejs",
+        color: "green-text-gradient",
       },
       {
-        name: "restapi",
+        name: "responsive",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: mmdev,
+    source_code_link: "https://github.com/MaximeMettey/my-3d-portfolio",
+  },
+  {
+    name: "Arlux",
+    description:
+      "One of the most famous electrical company in the region of Belfort needed a new website. Thierry asked for a fresh and animated design, along with a back-office to add and change the content if necessary. This one is a Wordpress website, with a full custom theme developped from scratch !",
+    tags: [
+      {
+        name: "wordpress",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "html",
         color: "green-text-gradient",
       },
       {
         name: "scss",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "creativeui",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "customtheme",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: arlux,
+    source_code_link: "",
+    project_link: "https://www.arlux-sarl.fr",
+  },
+  {
+    name: "Thanatopraxie",
+    description:
+      "Claire, embalming teacher, wanted to develop a quiz app for her students. I thought it was better to go with a Progressive Web App, so her students could use it on every device. With its approach and fun design, this project won a \"Digital Award\" in 2022 !",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pwa",
+        color: "green-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "award",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "customtheme",
+        color: "green-text-gradient",
+      },
+    ],
+    image: thanatopraxie,
+    source_code_link: "",
+    project_link: "https://www.thanatopraxie.pro/",
+  },
+  {
+    name: "Grrranit - National Scene",
+    description:
+      "Grrranit, the emblematic french national theater, trusted us multiple times to develop new versions of their website. This one is the latest, with a scalable design fully customizable by the customer. In collaboration with 11h11 agency, the biggest challenge here was to develop a light structural disorder on the season page, with some diagonal lines, and keep this working on every device. Mission accomplished !",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pwa",
+        color: "green-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "customtheme",
+        color: "green-text-gradient",
+      },
+    ],
+    image: grrranit,
+    source_code_link: "",
+    project_link: "https://www.thanatopraxie.pro/",
+  },
+  {
+    name: "Didsign - Car sculpture",
+    description:
+      "Do you know Porsche ? A sure thing is, Didier does know Porsche ! Producing hand-carved phenomenal cars, you have to show it to the world with a good-looking website. Let's do it entirely full-screen, no-scroll, and you get didsign.fr !",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "green-text-gradient",
+      },
+      {
+        name: "customtheme",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "noscroll",
+        color: "green-text-gradient",
+      },
+    ],
+    image: didsign,
+    source_code_link: "",
+    project_link: "https://www.didsign.fr/",
+  },
+  {
+    name: "Venera Creation",
+    description:
+      "Christine is a real artist, she has a great design sensibility. A classic e-shop website ? Not for her. Getting inspired from her creations, let's make a bending template e-shop website !",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "green-text-gradient",
+      },
+      {
+        name: "customtheme",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "complexui",
+        color: "green-text-gradient",
+      },
+    ],
+    image: veneracreation,
+    source_code_link: "",
+    project_link: "https://www.veneracreation.fr/",
   },
 ]
 

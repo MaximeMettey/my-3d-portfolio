@@ -18,9 +18,7 @@ const Computers = (isMobile) => {
         intensity={1}
         castShadow
         shadow-mapSize={1024}
-      >
-
-      </spotLight>
+      />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
