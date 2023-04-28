@@ -8,9 +8,9 @@ import { technologies } from "../constants"
 
 const SkillCard = ({ index, name, icon }) => {
   return (
-    <Tilt className="xs:w-[150px] w-full">
+    <Tilt className="xs:w-full w-[150px]">
       <motion.div
-        variants={fadeIn("right", "spring", 0.1 * index, 0.75)}
+        // variants={fadeIn("right", "spring", 0.2 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
@@ -33,7 +33,7 @@ const Tech = () => {
   return (
     <>
       <motion.div
-        variants={textVariant()}
+      // variants={textVariant()}
       >
         <p className={styles.sectionSubText}>What I know</p>
         <h2 className={styles.sectionHeadText}>Skills.</h2>
@@ -41,7 +41,7 @@ const Tech = () => {
       <div className="flex flex-row flex-wrap justify-center gap-7 mt-3">
         {technologies.map((technology, index) => (
           <SkillCard
-            key={technology.name}
+            key={`skill-${index}`}
             index={index}
             {...technology}
           />
