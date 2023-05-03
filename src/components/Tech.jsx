@@ -8,7 +8,7 @@ import { technologies } from "../constants"
 
 const SkillCard = ({ index, name, icon }) => {
   return (
-    <Tilt className="xs:w-full w-[150px]">
+    <Tilt className="w-[150px]">
       <motion.div
         // variants={fadeIn("right", "spring", 0.2 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
