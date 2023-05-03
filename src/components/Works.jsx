@@ -126,9 +126,11 @@ const Works = () => {
           // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Just some concrete projects to showcase my different skills.
+          Just a selection of concrete projects to showcase my different skills.
           Every project is briefly described, and to dig more you may
           find a link to the project or a link to the GitHub repository.
+          Unfortunately, I cannot show everything, because a lot of the
+          projects I did are confidential.
         </motion.p>
       </div>
 
